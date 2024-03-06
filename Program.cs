@@ -10,7 +10,7 @@ class Program{
         bool[] casas = {true, true, true, true};
         Console.Write("Deseja excluir alguma casa do sorteio? (y/n)");
         string exclusao = Console.ReadLine()!.ToLower();
-        if (exclusao == "Y")
+        if (exclusao == "y")
             Exclusao(casas);
         //Seleciona quantos sorteios seram feitos
         Console.Write("quantos sorteios voce deseja fazer?: ");
@@ -61,7 +61,7 @@ class Program{
             }
         }
         Console.Write("Deseja realizar outro sorteio? (y/n): ");
-        string reiniciar = Console.ReadLine()!.ToLower();
+        string reiniciar = Console.ReadLine().ToLower();
             if(reiniciar == "y"){
                 Console.Clear();
                 Main();
